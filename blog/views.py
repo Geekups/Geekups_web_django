@@ -8,3 +8,6 @@ class HomePage(TemplateView):
     
 class AboutUs(TemplateView):
     template_name = 'abuot.html'
+
+class Services(TemplateView):
+    template_name = 'services.html'
