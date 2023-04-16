@@ -63,28 +63,23 @@
             <!--Main menu navigation list-->
             <ul class="navbar-nav ml-auto line">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home" data-scroll-nav="0">Home</a>
+                    <a class="nav-link" href="{% url 'contact' %}" >  تماس با ما </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about" data-scroll-nav="1">About</a>
+                    <a class="nav-link" href="{% url 'about' %}" > درباره دایانا</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services" data-scroll-nav="2">Services</a>
+                    <a class="nav-link" href="{% url 'services' %}" >خدمات </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio" data-scroll-nav="3">Portfolio</a>
+                    <a class="nav-link" href="{% url 'portfolio' %}" >  نمونه کار ها</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog' %}">مقالات</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#team" data-scroll-nav="4">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#price" data-scroll-nav="5">Price</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#blog" data-scroll-nav="6">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact" data-scroll-nav="7">Contact</a>
+                    <a class="nav-link" href="{% url 'home' %}" >   صفحه اصلی</a>
                 </li>
             </ul>
             <!--End of Main menu navigation list-->

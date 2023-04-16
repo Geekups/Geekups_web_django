@@ -63,23 +63,23 @@
             <!--Main menu navigation list-->
             <ul class="navbar-nav ml-auto line">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home" data-scroll-nav="0">  صفحه اصلی</a>
+                    <a class="nav-link" href="{% url 'contact' %}" >  ارتباط با ما </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about" data-scroll-nav="1"> درباره دایانا</a>
+                    <a class="nav-link" href="{% url 'about' %}" > درباره دایانا</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services" data-scroll-nav="2">خدمات </a>
+                    <a class="nav-link" href="{% url 'services' %}" >خدمات </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio" data-scroll-nav="3">  نمونه کار ها</a>
+                    <a class="nav-link" href="{% url 'portfolio' %}" >  نمونه کار ها</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#blog" data-scroll-nav="6">مقالات</a>
+                    <a class="nav-link" href="{% url 'blog' %}">مقالات</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact" data-scroll-nav="7"> تماس با ما</a>
+                    <a class="nav-link" href="{% url 'home' %}" >   صفحه اصلی</a>
                 </li>
             </ul>
             <!--End of Main menu navigation list-->
