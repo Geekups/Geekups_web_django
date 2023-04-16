@@ -15,3 +15,9 @@ class Services(TemplateView):
 class Contact(TemplateView):
     template_name = 'contact.html'
 
+class Porfolio(TemplateView):
+    template_name = 'portfolio.html'
+    
+    
+class Blog(TemplateView):
+    template_name = 'blog.html'
