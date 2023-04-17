@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <!-- ====== START CONTACT ======  -->
+    <section class="contact padding" id="contact" data-scroll-index="7">
+        <div class="container">
+
+            <!-- START CONTACT SECTION TITLE -->
+            <div class="text-center">
+                <h2 class="heading-primary mb-5"><span> Get In <span>Touch</span></h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                    aperiam consectetur rem odit in natus.</p>
+            </div>
+            <!-- END CONTACT SECTION TITLE -->
+
+            <!-- START INFO-->
+            <div class="row">
+                <div class="col-lg-5 mx-auto">
+                    <ul class="info">
+                        <li>
+                            <i class="fa fa-map fa-fw"></i>
+                            <h5><span>Address:</span></h5>
+                            <p>2885 Walt Nuzum Farm Road, New York</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <h5><span>Mobile:</span></h5>
+                            <p>+516-892-6997, +585-457-5267</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <h5><span>Email:</span></h5>
+                            <p>company@email.com</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-refresh fa-fw"></i>
+                            <h5><span>Timing:</span></h5>
+                            <p>Mon-Fri - 9:00 AM to 5:00 PM</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END INFO -->
+
+                <!-- START CONTACT FORM -->
+                <div class="contact-form col-lg-7 mx-auto">
+                    <form class="form" id="contact-form" method="post" action="contact.php">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" placeholder="Name *"
+                                            required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" placeholder="Email *"
+                                            required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="form_subject" type="text" name="subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" placeholder="Message" rows="4"
+                                            required="required"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <button type="submit" class="button btn-hover">Send Message</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- END CONTACT FORM -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ====== END CONTACT ======  -->
+
+
+    {% endblock content %}
