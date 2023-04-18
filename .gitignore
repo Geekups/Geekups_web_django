@@ -1,2 +1,2 @@
-# ignore all .a files
+# ignore all .pyc files
 *.pyc
