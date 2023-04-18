@@ -16,6 +16,7 @@ class Services(TemplateView):
 
 class Contact(TemplateView):
     template_name = 'contact.html'
+    #todo add form for input
 
 class Porfolio(TemplateView):
     template_name = 'portfolio.html'

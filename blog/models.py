@@ -20,3 +20,9 @@ class Portfolio(models.Model):
     content = models.TextField()
     image   = models.ImageField(upload_to='images/')
     category= models.CharField(max_length=50)
+
+
+class Contact(models.Model):
+    email = models.EmailField(max_length=254)
+    name  = models.CharField(max_length=50)
+    text  = models.TextField()
