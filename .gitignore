@@ -1,2 +1,4 @@
 .venv
 /venv
+blog/__pycache__/
+config/__pycache__/
