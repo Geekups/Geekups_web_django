@@ -1,4 +1,1 @@
-.venv
-/venv
-blog/__pycache__/
-config/__pycache__/
+*.pyc
