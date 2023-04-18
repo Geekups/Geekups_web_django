@@ -1,98 +1,100 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
+<!-- ====== START ABOUT ======  -->
+<section class="about padding" id="about" data-scroll-index="1">
+  <div class="container">
+    <div class="row">
+      <!-- START ABOUT PICTURE -->
+      <div class="col-lg-6 about-image mb-5">
+        <img src="/static/img/about.png" alt="About picture" />
+      </div>
+      <!-- END ABOUT PICTURE -->
 
-{% block content %}
-    <!-- ====== START ABOUT ======  -->
-    <section class="about padding" id="about" data-scroll-index="1">
-        <div class="container">
-            <div class="row">
-
-                <!-- START ABOUT PICTURE -->
-                <div class="col-lg-6 about-image mb-5 ">
-                    <img src="/static/img/about.png" alt="About picture" />
-                </div>
-                <!-- END ABOUT PICTURE -->
-
-                <!-- START ABOUT CONTENT -->
-                <div class="col-lg-6 about-content">
-                    <div class="hr-title">
-                        <h2 class="heading-primary mb-2">
-                            About Us
-                        </h2>
-                        <div class="headerhr"></div>
-                    </div>
-                    <h3 class="heading-tertiary mt-3 mb-3">
-                        Become best of you
-                    </h3>
-                    <p class="mb-3">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vel aut animi quam ducimus
-                        consequatur voluptas delectus, sapiente, explicabo nam quasi! Corporis ipsum quae repellendus
-                        molestias a quaerat recusandae similique!</p>
-                    <p class="mb-5">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur esse doloremque numquam,
-                        architecto harum fugiat iusto accusantium ullam odit quae!
-                    </p>
-                    <a href="#0" class="button btn-hover mt-3">Read More &rarr;</a>
-                </div>
-                <!-- END ABOUT CONTENT -->
-
-            </div>
+      <!-- START ABOUT CONTENT -->
+      <div class="col-lg-6 about-content">
+        <div class="hr-title">
+          <h2 class="heading-primary mb-2">About Us</h2>
+          <div class="headerhr"></div>
         </div>
-    </section>
-    <!-- ====== END ABOUT======  -->
+        <h3 class="heading-tertiary mt-3 mb-3">Become best of you</h3>
+        <p class="mb-3">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vel
+          aut animi quam ducimus consequatur voluptas delectus, sapiente,
+          explicabo nam quasi! Corporis ipsum quae repellendus molestias a
+          quaerat recusandae similique!
+        </p>
+        <p class="mb-5">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
+          esse doloremque numquam, architecto harum fugiat iusto accusantium
+          ullam odit quae!
+        </p>
+        <a href="#0" class="button btn-hover mt-3">Read More &rarr;</a>
+      </div>
+      <!-- END ABOUT CONTENT -->
+    </div>
+  </div>
+</section>
+<!-- ====== END ABOUT======  -->
 
-    <!-- ======  START ABOUT LIST====== -->
-    <section class="about-list padding">
-        <div class="container">
-            <div class="row">
+<!-- ======  START ABOUT LIST====== -->
+<section class="about-list padding">
+  <div class="container">
+    <div class="row">
+      <!-- START ABOUT LIST SECTION TITLE -->
+      <div class="text-center">
+        <h2 class="heading-primary mb-5">Our <span>Creative</span></h2>
+        <p class="mb-3">
+          Lorem Ipsum is simply dummy text of the printing and type setting
+          industry when an unknown printer took a galley of type and scrambled
+          it to make a type specimen book It has survived not only five
+          centuries.
+        </p>
+      </div>
+      <!-- END ABOUT LIST SECTION TITLE -->
 
-                <!-- START ABOUT LIST SECTION TITLE -->
-                <div class="text-center">
-                    <h2 class="heading-primary mb-5">Our <span>Creative</span></h2>
-                    <p class="mb-3">Lorem Ipsum is simply dummy text of the printing and type setting
-                        industry when an unknown printer took a galley of type and scrambled it to make a type specimen
-                        book It has survived not only five centuries.</p>
-                </div>
-                <!-- END ABOUT LIST SECTION TITLE -->
-
-                <!-- START ABOUT ITEM -->
-                <div class="about-item col-lg-4 col-md-6 mx-auto p-0 mt-5">
-                    <div class="text-center">
-                        <i class="icon fa fa-paint-brush fa-2x"></i>
-                        <h5>Web Design</h5>
-                        <h6>Modern & Clean Design</h6>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
-                    </div>
-                </div>
-                <!-- END ABOUT ITEM -->
-
-                <!-- START ABOUT ITEM -->
-                <div class="about-item col-lg-4 col-md-6 mx-auto p-0 mt-5">
-                    <div class="text-center">
-                        <i class="icon fa fa-desktop fa-2x"></i>
-                        <h5>Development</h5>
-                        <h6>Web & Mobile Development</h6>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
-                    </div>
-                </div>
-                <!-- END ABOUT ITEM -->
-
-                <!-- START ABOUT ITEM -->
-                <div class="about-item col-lg-4 col-md-6 mx-auto p-0 mt-5">
-                    <div class="text-center">
-                        <i class="icon fa fa-diamond fa-2x"></i>
-                        <h5>Branding</h5>
-                        <h6>Logo Design</h6>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
-                    </div>
-                </div>
-                <!-- END ABOUT ITEM -->
-
-            </div>
+      <!-- START ABOUT ITEM -->
+      <div class="about-item col-lg-4 col-md-6 mx-auto p-0 mt-5">
+        <div class="text-center">
+          <i class="icon fa fa-paint-brush fa-2x"></i>
+          <h5>Web Design</h5>
+          <h6>Modern & Clean Design</h6>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and type setting
+            industry
+          </p>
         </div>
-    </section>
-    <!-- ======  END OF ABOUT LIST====== -->
+      </div>
+      <!-- END ABOUT ITEM -->
 
-    {% endblock content %}
+      <!-- START ABOUT ITEM -->
+      <div class="about-item col-lg-4 col-md-6 mx-auto p-0 mt-5">
+        <div class="text-center">
+          <i class="icon fa fa-desktop fa-2x"></i>
+          <h5>Development</h5>
+          <h6>Web & Mobile Development</h6>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and type setting
+            industry
+          </p>
+        </div>
+      </div>
+      <!-- END ABOUT ITEM -->
 
+      <!-- START ABOUT ITEM -->
+      <div class="about-item col-lg-4 col-md-6 mx-auto p-0 mt-5">
+        <div class="text-center">
+          <i class="icon fa fa-diamond fa-2x"></i>
+          <h5>Branding</h5>
+          <h6>Logo Design</h6>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and type setting
+            industry
+          </p>
+        </div>
+      </div>
+      <!-- END ABOUT ITEM -->
+    </div>
+  </div>
+</section>
+<!-- ======  END OF ABOUT LIST====== -->
 
-
+{% endblock content %}
