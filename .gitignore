@@ -1,2 +1,6 @@
 # ignore all .pyc files
 *.pyc
+blog/__pycache__/
+config/__pycache__/
+blog/__pycache__
+config/__pycache__
