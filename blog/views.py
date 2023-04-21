@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-from.models import Article
+from.models import Article, Portfolio
 
 # Create your views here.
 
@@ -18,10 +18,15 @@ class Contact(TemplateView):
     template_name = 'contact.html'
     #todo add form for input
 
-class Porfolio(TemplateView):
-    template_name = 'portfolio.html'
+
+def portfolio (request):
+    portfolio = Portfolio.objects.all()
+    context = {
+        'portfolio':portfolio
+    }
+    return render(request,'portfolio.html',context)
     
-    
+
 
 def blogs (request):
     blogs = Article.objects.all()
