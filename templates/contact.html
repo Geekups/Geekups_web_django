@@ -39,39 +39,11 @@
                 <!-- END INFO -->
 
                 <!-- START CONTACT FORM -->
-                <div class="contact-form col-lg-7 mx-auto">
-                    <form class="form" id="contact-form" method="post" action="contact">
-                        <div class="messages"></div>
-                        <div class="controls">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input id="form_name" type="text" name="name" placeholder="Name *"
-                                            required="required">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input id="form_email" type="email" name="email" placeholder="Email *"
-                                            required="required">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea id="form_message" name="message" placeholder="Message" rows="4"
-                                            required="required"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <button type="submit" class="button btn-hover">Send Message</button>
-                                </div>
-
-                            </div>
-                        </div>
+                    <form class="form"  method="post" >
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit">ارسال</button>
                     </form>
-                </div>
                 <!-- END CONTACT FORM -->
 
             </div>
