@@ -32,7 +32,7 @@ step 4: Add my apps to your INSTALLED_APPS setting:
             # my widget 
             'widget_tweaks',
         ]
-        And add static files and media files:
+        # And add static files and media files:
 
         # Static files (CSS, JavaScript, Images)
         STATIC_URL = 'static/'
@@ -58,6 +58,6 @@ step 11: myProjectName URL Configuration(appname/urls.py) Add path of urls myPro
             ...
             path('', include('appname.urls'))
         ]
-    And add path of statics files
+    # And add path of statics files
         urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
 
