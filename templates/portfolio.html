@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+ <!-- ====== START BLOG ======  -->
+ <section class="blog padding" id="blog" data-scroll-index="6">
+    <div class="container">
+        <div class="row">
+
+            <!-- START BLOG SECTION TITLE -->
+            <div class="text-center">
+                <h2 class="heading-primary mb-5"> چند نمونه از پروژه های تکمیل شده</h2>
+                <p class="mb-5" dir='rtl'>   تیم دایانا با بالاترین کیفیت محصول در کوتاه ترین زمان تحویل در خدمت شماست 
+                    پروژه های انجام شده دارای ضمانت کارکرد عالی  از تیم داینانا  هستند</p>
+            </div>
+            <!-- END BLOG SECTION TITLE -->
+
+            <!-- BLOG ITEM -->
+
+
+            {% for porf in portfolio %}
+            
+            
+            <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
+                <div class="blog-img">
+                    <img src={{porf.image.url}} alt="blog-image">
+                </div>
+                <div class="blog-item">
+                    <div class="post-title">
+                        <a href="#0">
+                            <h3>{{porf.title}}</h3>
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            {{porf.content}}
+                        </p>
+                        <a href="#0" class="button">مشاهده کامل<i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                    <div class="headerhr mt-4"></div>
+                    <div class="post-meta">
+                        <ul>
+                            <li>
+                                <i class="fa fa-tags"></i>
+                                <span>{{porf.category}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+
+            <!-- END BLOG ITEM -->
+
+  
+
+        </div>
+    </div>
+</section>
+<!-- ====== END BLOG ======  -->
+
+
+
+
+{% endblock content %}

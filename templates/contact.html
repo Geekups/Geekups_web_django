@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <!-- ====== START CONTACT ======  -->
+    <section class="contact padding" id="contact" data-scroll-index="7">
+        <div class="container">
+
+            <!-- START CONTACT SECTION TITLE -->
+            <div class="text-center">
+                <h2 class="heading-primary mb-5"><span>  ارتباط با  <span> ما</span></h2>
+                <p class="mb-5">نظرات و پیشنهادات خود را با ما در میان بگذارید  و در ارتقای کیفی روند کار ما سهیم باشید</p>
+            </div>
+            <!-- END CONTACT SECTION TITLE -->
+
+            <!-- START INFO-->
+            <div class="row">
+                <div class="col-lg-5 mx-auto">
+                    <ul class="info">
+                        <li>
+                            <i class="fa fa-map fa-fw"></i>
+                            <h5><span>نام:</span></h5>
+                            <p></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <h5><span>ایمیل:</span></h5>
+                            <p></p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <h5><span>متن پیام:</span></h5>
+                            <p></p>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- END INFO -->
+
+                <!-- START CONTACT FORM -->
+                    <form class="form"  method="post" >
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit">ارسال</button>
+                    </form>
+                <!-- END CONTACT FORM -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ====== END CONTACT ======  -->
+
+
+    {% endblock content %}

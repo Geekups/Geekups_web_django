@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="KEYWORDS">
+    <meta name="author" content="AUTHOR NAME">
+
+    <!-- TITLE -->
+    <title>dayana - Multipurpose One page</title>
+
+    <!-- FAVICON -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- MAGNIFIC POPUP CORE CSS -->
+    <link href="/static/css/magnific-popup.css" rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link href="/static/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/css/owl.theme.default.min.css" rel="stylesheet">
+
+    <!--Style CSS file-->
+    <link rel=" stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ====== Preloader ======  -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- ======End Preloader ======  -->
+
+    <!-- ======START NAVGITION ======  -->
+    <nav class="navbar navbar-expand-lg">
+        <!-- logo -->
+        <a class="navbar-brand" href="#home">
+            <img src="/static/img/logo.png" alt="header-Logo" class="logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+            <span class="icon-bar"><i class="fa fa-bars fa-2x"></i></span>
+        </button>
+        <!--End of Resposive Toggle icon-->
+
+        <div class="collapse navbar-collapse" id="navbarText">
+            <!--Main menu navigation list-->
+            <ul class="navbar-nav ml-auto line">
+                <li class="nav-item">
+                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'home' %}" >   صفحه اصلی  </a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'about' %}" > درباره دایانا</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'services' %}" >خدمات </a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'portfolio' %}" >  نمونه کار ها</a>
+                </li>
+
+                <li class="nav-item">
+                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'blog' %}">مقالات</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'contact' %}" >   تماس با ما </a>
+                </li>
+            </ul>
+            <!--End of Main menu navigation list-->
+        </div>
+        <!--End of resposive collapse class-->
+    </nav>
+    <!-- ====== END NAVGITION ======  -->
+
+
+    
+
+    {% block content %}
+    
+    
+    {% endblock content %}
+
+
+
+
+
+    <!-- ====== START FOOTER ======  -->
+    <section class="footer padding">
+        <div class="container">
+            <div class="row">
+                <!-- START dayana -->
+                <div class="col-lg-4 col-md-6 mb-sm-5 mb-3">
+                    <h3  class="heading-tertiary mb-3"> دایانا</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos ipsa, soluta eum itaque nobis
+                        quas sunt suscipit aliquid.</p>
+                </div>
+                <!-- END dayana -->
+
+                <!-- START QUICK LINKS -->
+                <div class="col-lg-2 col-md-6 mb-sm-5 mb-3">
+                    <h3  class="heading-tertiary mb-3">دسترسی </h3>
+                    <ul>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a  style="font-family: Tahoma ;" href="{% url 'blog' %}"> وبلاگ </a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a style="font-family: Tahoma ;" href="{% url 'about' %}">درباره ما </a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a style="font-family: Tahoma ;" href="#0">داستان دایانا</a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a style="font-family: Tahoma ;" href="#0"> انجمن </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END QUICK LINKS -->
+
+                <!-- START SUPPORT -->
+                <div class="col-lg-2 col-md-6 mb-sm-5 mb-3">
+                    <h3 class="heading-tertiary mb-3">پشتیبانی</h3>
+                    <ul>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a style="font-family: Tahoma ;" href="#0">سوالات متداول</a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a style="font-family: Tahoma ;" href="#0">حریم خصوصی</a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a style="font-family: Tahoma ;" href="#0">خط مشی</a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a style="font-family: Tahoma ;" href="#0">حمایت از ما</a>
+                        </li>
+                        <li><i class="fa fa-angle-double-right"></i>
+                            <a style="font-family: Tahoma ;" href="#0">اسناد</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END SUPPORT -->
+
+                <!-- START NEWSLETTER -->
+                <div class="col-lg-4 col-md-6 mb-sm-5 mb-3">
+                    <h3 class="heading-tertiary mb-3">اشتراک در خبرنامه ما</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Id nobis
+                        quas sunt suscipit aliquid.</p>
+                    <form class="form mt-3">
+                        <div class="form-check mb-3"> <label class="form-check-label"> <input type="checkbox"
+                                    name="checkbox"> <small>بله، من می‌خواهم اعلانات را از طریق ایمیل دریافت کنم
+                                </small></label>
+                        </div>
+                        <div class="input-group">
+                            <input style="font-family: Tahoma ;" name="email" type="email" class="form-control" placeholder="ایمیل خود را وارد کنید"
+                                required>
+                            <button class="btn" type="submit"><i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- END NEWSLETTER -->
+
+            <hr class="clearfix w-100 color-dark">
+
+            <!-- START FOOTER BOTTOM -->
+            <div class="offset-md-3 col-md-6 offset-md-3">
+
+                <!-- START SOCIAL ICONS -->
+                <div class="social-links">
+                    <ul>
+                        <!-- <li><a href="#0"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li><a href="#0"><i class="fa fa-twitter fa-fw"></i></a></li>
+                        <li><a href="#0"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                        <li><a href="#0"><i class="fa fa-pinterest-p fa-fw"></i></a></li>
+                        <li><a href="#0"><i class="fa fa-instagram fa-fw"></i></a></li> -->
+                        <li><a href="https://www.linkedin.com/in/dayana-programming-family-92ba2825b/"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                        <li><a href="https://github.com/Dayana-World"><i class="fa fa-github fa-fw"></i></a></li>
+                    </ul>
+                </div>
+                <!-- END SOCIAL ICONS -->
+
+                <!-- START RIGHTS -->
+                <div class="copyright">
+                    <div class="copyright">
+                        <h5> &copy; Dayana 2023 | All Rights Reserved. Designed by <a href="#0"
+                            target="_blank"></a></h5>
+                    </div>
+                </div>
+                <!-- END RIGHTS -->
+            </div>
+            <!-- END FOOTER BOTTOM -->
+        </div>
+</section>
+<!-- ====== END FOOTER ======  -->
+
+<!-- ====== JS ======  -->
+
+<!--jquery-3.3.1 js-->
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+
+<!-- popper js -->
+<script src="/static/js/popper.min.js"></script>
+
+<!-- bootstrap js -->
+<script src="/static/js/bootstrap.min.js"></script>
+
+<!-- scrollIt js --static/>
+<script src="js/scrollIt.min.js"></script>
+
+<!--countTo js -->
+<script src="/static/js/jquery.countTo.js"></script>
+
+<!-- filter js -->
+<script src="/static/js/jquery.filterizr.min.js"></script>
+
+<!-- waypoints js -->
+<script src="/static/js/waypoints.min.js"></script>
+
+<!-- Magnific Popup core JS -->
+<script src="/static/js/jquery.magnific-popup.min.js"></script>
+
+<!-- owl carousel js -->
+<script src="/static/js/owl.carousel.min.js"></script>
+
+<!-- validator js -->
+<script src="/static/js/validator.js"></script>
+
+<!-- maps js -->
+<script src="/static/static/js/gmaps.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
+<script src="/static/static/js/map.js"></script>
+
+<!-- coustom js -->
+<script src="/static/js/main.js"></script>
+
+
+</body>
+
+</html>
