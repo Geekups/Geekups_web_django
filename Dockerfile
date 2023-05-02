@@ -1,8 +1,11 @@
 FROM python:latest
 
-RUN mkdir /dayana_blog
-WORKDIR /dayana_blog
-COPY . /dayana_blog
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+RUN mkdir /code
+WORKDIR /code
+COPY . /code
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
