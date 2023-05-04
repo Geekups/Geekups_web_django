@@ -51,7 +51,7 @@
     <!-- ======START NAVGITION ======  -->
     <nav class="navbar navbar-expand-lg">
         <!-- logo -->
-        <a class="navbar-brand" href="#home">
+        <a class="navbar-brand" href="{% url 'home' %}">
             <img src="/static/img/logo.png" alt="header-Logo" class="logo"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
@@ -63,7 +63,7 @@
             <!--Main menu navigation list-->
             <ul class="navbar-nav ml-auto line">
                 <li class="nav-item">
-                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'home' %}" >   صفحه اصلی  </a>
+                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'contact' %}" >   تماس با ما  </a>
                 </li>
                 <li class="nav-item">
                     <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'about' %}" > درباره دایانا</a>
@@ -79,7 +79,7 @@
                     <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'blog' %}">مقالات</a>
                 </li>
                 <li class="nav-item">
-                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'contact' %}" >   تماس با ما </a>
+                    <a style="font-family: Tahoma ;" class="nav-link" href="{% url 'home' %}" >  صفحه اصلی </a>
                 </li>
             </ul>
             <!--End of Main menu navigation list-->
@@ -107,8 +107,7 @@
                 <!-- START dayana -->
                 <div class="col-lg-4 col-md-6 mb-sm-5 mb-3">
                     <h3  class="heading-tertiary mb-3"> دایانا</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos ipsa, soluta eum itaque nobis
-                        quas sunt suscipit aliquid.</p>
+                    <p>کیفیت سرعت قیمت مناسب تمامی ان چیزی را که نیاز دارید از ما بخواهید </p>
                 </div>
                 <!-- END dayana -->
 
@@ -192,15 +191,6 @@
                     </ul>
                 </div>
                 <!-- END SOCIAL ICONS -->
-
-                <!-- START RIGHTS -->
-                <div class="copyright">
-                    <div class="copyright">
-                        <h5> &copy; Dayana 2023 | All Rights Reserved. Designed by <a href="#0"
-                            target="_blank"></a></h5>
-                    </div>
-                </div>
-                <!-- END RIGHTS -->
             </div>
             <!-- END FOOTER BOTTOM -->
         </div>
