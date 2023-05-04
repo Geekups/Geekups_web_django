@@ -12,6 +12,9 @@ class HomePage(TemplateView):
 class AboutUs(TemplateView):
     template_name = 'abuot.html'
 
+
+
+
 class Services(TemplateView):
     template_name = 'services.html'
 
@@ -26,7 +29,7 @@ def contact_view(request):
             email = form.cleaned_data['email']
             text = form.cleaned_data['text']
             Contact.objects.create(name=name, email=email, text=text)
-            return redirect('contact')
+            return redirect('communication')
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
@@ -51,3 +54,8 @@ def blogs (request):
     }
     return render(request,'blog.html',context)
 
+
+
+
+class Communication(TemplateView):
+    template_name = 'communication.html'
