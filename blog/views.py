@@ -14,13 +14,13 @@ class AboutUs(TemplateView):
 
 
 
-
+#our servieces
 class Services(TemplateView):
     template_name = 'services.html'
 
 
 
-
+#send message to us
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -37,7 +37,7 @@ def contact_view(request):
 
 
 
-
+#نمونه کارا
 def portfolio (request):
     portfolio = Portfolio.objects.all()
     context = {
@@ -46,9 +46,9 @@ def portfolio (request):
     return render(request,'portfolio.html',context)
     
 
-
+#website articles
 def blogs (request):
-    blogs = Article.objects.all()
+    blogs = Article.objects.filter(publish=True)
     context = {
         'blogs':blogs
     }
@@ -56,6 +56,6 @@ def blogs (request):
 
 
 
-
+#when comment saved
 class Communication(TemplateView):
     template_name = 'communication.html'
