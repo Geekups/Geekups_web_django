@@ -12,12 +12,15 @@ class HomePage(TemplateView):
 class AboutUs(TemplateView):
     template_name = 'abuot.html'
 
+
+
+#our servieces
 class Services(TemplateView):
     template_name = 'services.html'
 
 
 
-
+#send message to us
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -26,7 +29,7 @@ def contact_view(request):
             email = form.cleaned_data['email']
             text = form.cleaned_data['text']
             Contact.objects.create(name=name, email=email, text=text)
-            return redirect('contact')
+            return redirect('communication')
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
@@ -34,7 +37,7 @@ def contact_view(request):
 
 
 
-
+#نمونه کارا
 def portfolio (request):
     portfolio = Portfolio.objects.all()
     context = {
@@ -43,11 +46,16 @@ def portfolio (request):
     return render(request,'portfolio.html',context)
     
 
-
+#website articles
 def blogs (request):
-    blogs = Article.objects.all()
+    blogs = Article.objects.filter(publish=True)
     context = {
         'blogs':blogs
     }
     return render(request,'blog.html',context)
 
+
+
+#when comment saved
+class Communication(TemplateView):
+    template_name = 'communication.html'
