@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: nginx
+    build: 
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - nginx_network
+
