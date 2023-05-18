@@ -1,20 +1,38 @@
-version: '3'
+version: '3.7'
 
 services:
   app:
     build: .
+
     volumes:
       - .:/app
-    container_name: dayana_websit
-    restart: always
+
+    container_name: 'dayana_websit'
+    restart: 'always'
+
     environment:
       - SECRET_KEY= 'django-insecure-nyd96_ktm^_so3^_po%4pb8h@1em7!l@_$y9nqp_#9^4tlrpt^'
       - DEBUG=False
       - DATABASE_URL=sqlite:///db.sqlite3
+    
     ports:
       - "8000:8000"
 
+    depends_on:
+      - 'nginx'
+
   nginx:
-    build:
-      context: .
+    build: './nginx '
     container_name: nginx
+    restart: 'always'
+    ports:
+      - '80:80'
+    
+    volumes:
+      - type: 'bind'
+        source: './images'
+        target: '/app/images'
+
+      - type: 'bind'
+        source: './static'
+        target: '/static'
