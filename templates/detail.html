@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+
+<html>
+<head>
+    <style>
+        .container {
+            text-align: center; 
+        }
+        .image {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <p> {{ articles.title }} </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p> {{ articles.content }} </p>
+        <br>
+        <br>
+             <div class="image">
+                <img src="{{ articles.image.url }}" alt="تصویر" />
+            </div>
+
+        <p> {{ articles.created_at }} </p>
+
+    </div>
+
+</body>
+</html>
+
+
+
+{% endblock content%}

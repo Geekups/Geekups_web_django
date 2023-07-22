@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from django.views.generic import TemplateView
 from.models import Article, Portfolio,Contact
 from .form import ContactForm
+from django.views.generic import DetailView
 
 # Create your views here.
 
@@ -55,6 +56,11 @@ def blogs (request):
     return render(request,'blog.html',context)
 
 
+
+class ArticleDetail(DetailView):
+    template_name = 'detail.html'
+    model = Article
+    context_object_name = 'articles'
 
 #when comment saved
 class Communication(TemplateView):
